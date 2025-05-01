@@ -69,3 +69,8 @@ section{
     border: 1px solid black;
     border-radius: 10px;
 }
+
+.remaining{
+    color: white;
+    margin: 0 20px;
+}

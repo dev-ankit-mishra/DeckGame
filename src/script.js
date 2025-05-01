@@ -15,7 +15,7 @@ document.querySelector(".draw").addEventListener("click",()=>{
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            document.querySelector(".remaining").innerText=`Remaining cards ${data.remaining}`
+            document.querySelector(".remaining").innerText=`Remaining cards : ${data.remaining}`
             document.querySelector("#card1").innerHTML = `
                 <img class="cards" src="${data.cards[0].image}" alt="card-img"/>
             `;
