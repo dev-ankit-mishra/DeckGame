@@ -11,10 +11,13 @@ body{
 }
 
 main{
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-color: green;
+
 }
 
 header{
@@ -23,11 +26,17 @@ header{
     align-items: center;
 }
 
-header > button{
+header > button {
     border-radius: 5px;
     padding: 10px;
     background-color: yellow;
     color: black;
     font-weight: 500;
     font-size: 1rem;
+}
+footer{
+    align-self: stretch;
+    text-align: center;
+    padding: 5px;
+    background-color: yellow;
 }
