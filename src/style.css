@@ -47,8 +47,12 @@ footer > button{
     font-weight: 500;
 }
 
-button:disabled{
+button:disabled {
     color: gray;
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+    opacity: 0.6;
+
 }
 
 section{

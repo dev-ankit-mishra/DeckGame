@@ -4,6 +4,7 @@ let computerScore=0
 const compScore=document.querySelector('.computer-score')
 const playerScore=document.querySelector('.my-score')
 const message = document.querySelector('.message')
+const draw = document.querySelector('.draw')
 
 
 document.querySelector("#deck").addEventListener("click",()=>{fetch("https://www.deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
@@ -21,6 +22,10 @@ document.querySelector(".draw").addEventListener("click",()=>{
         .then(res => res.json())
         .then(data => {
             console.log(data);
+
+            if(data.remaining===0){
+                draw.disabled=true;
+            }
 
 
 
