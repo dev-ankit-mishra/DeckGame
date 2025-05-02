@@ -6,7 +6,9 @@
 
 body{
     font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
 
 }
 
@@ -40,6 +42,13 @@ footer > button{
     padding: 5px;
     background-color: yellow;
     cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+button:disabled{
+    color: gray;
 }
 
 section{
@@ -73,4 +82,9 @@ section{
 .remaining{
     color: white;
     margin: 0 20px;
+    font-size: 1rem;
+}
+.message{
+    font-size: 1.3rem;
+    font-weight: bold;
 }
