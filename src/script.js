@@ -26,3 +26,22 @@ document.querySelector(".draw").addEventListener("click",()=>{
 
 })
 
+function winnerDetermination(card1,card2){
+    const value=["1","2","3","4","5","6","7","8","9","J","K","Q","A"]
+    const index1=value.indexOf(card1)
+    const index2=value.indexOf(card2)
+
+    let result
+    if(index1>index2){
+        result="Computer Win!"
+    }else if(index2>index2){
+        result="You Win!"
+    }else{
+        result="Draw!"
+    }
+
+    return result;
+
+
+}
+
